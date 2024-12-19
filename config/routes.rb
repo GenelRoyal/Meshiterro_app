@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update]
   
   get "homes/about", as: "about"
+
+  resource :map, only: [:show]
 end
